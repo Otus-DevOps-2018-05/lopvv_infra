@@ -1,7 +1,7 @@
 # lopvv_infra
 lopvv Infra repository
 
-##Homework-03
+## Homework-03
 #### Task \#1:
 1. Create port forwarding
 ```
@@ -36,12 +36,12 @@ ssh -f -N tunnelbastion
 
 ##### Variables
 bastion_IP = 35.210.24.53
+
 someinternalhost_IP = 10.132.0.3
 
 
-##Homework-04
-testapp_IP = 35.204.184.40
-testapp_port = 9292
+## Homework-04
+
 
 1. Create and deploy
 ```
@@ -61,7 +61,13 @@ gcloud compute firewall-rules create default-puma-server \
  --allow tcp:9292 \
  --target-tags=puma-server
  ```
-##Homework-05
+
+ ##### Variables
+
+ testapp_IP = 35.204.184.40
+
+ testapp_port = 9292
+## Homework-05
 1. Create base image with ruby and mongodb
 ```
 packer build -var-file=./variables.json ubuntu16.json
