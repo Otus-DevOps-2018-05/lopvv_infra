@@ -1,5 +1,5 @@
 project = "infra-00000"
-public_key_path = "~/.ssh/user"
+public_key_path = "~/.ssh/appuser"
 disk_image = "ubuntu-base"
-private_key_path = "~/.ssh/user"
+private_key_path = "~/.ssh/appuser"
 zone = "europe-west1-a"
