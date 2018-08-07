@@ -80,3 +80,12 @@ packer build -var-file=./variables-immutable.json immutable.json
 ```
 create-reddit-vm.sh
 ```
+
+## Homework-06
+#### Задание со \*
+Добавил файл metadata.tf
+Если добавить еще один ключ вручную, то после выполнения terraform apply он затирается.
+
+
+#### Задание с \*\*
+Попробую разобраться позже, после остальных дз.
