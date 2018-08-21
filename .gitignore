@@ -6,3 +6,4 @@ variables-immutable.json
 *.tfvars
 .terraform/
 *.retry
+gce.ini
