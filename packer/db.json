@@ -8,7 +8,7 @@
         {
             "type": "googlecompute",
             "project_id": "{{user `var_project_id`}}",
-            "image_name": "reddit--db-base-{{timestamp}}",
+            "image_name": "reddit-db-base-{{timestamp}}",
             "image_family": "reddit-db-base",
             "source_image_family": "{{user `var_source_image_family`}}",
             "zone": "europe-west1-b",

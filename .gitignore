@@ -5,3 +5,4 @@ variables-immutable.json
 *.tfstate.backup
 *.tfvars
 .terraform/
+gce.ini

@@ -27,7 +27,6 @@ resource "google_compute_instance" "db" {
   }
 
   provisioner "remote-exec" {
-    script = "${path.module}/files/mongo_config.sh"  
+    script = "${path.module}/files/mongo_config.sh"
   }
-
 }
