@@ -5,5 +5,5 @@ variables-immutable.json
 *.tfstate.backup
 *.tfvars
 .terraform/
-*.retry
 gce.ini
+*.retry
