@@ -23,6 +23,20 @@ resource "google_compute_instance" "app" {
   }
 
 
+
+  connection {
+    type        = "ssh"
+    user        = "appuser"
+    agent       = false
+    private_key = "${file(var.private_key_path)}"
+  }
+
+  provisioner "file" {
+    content     = "${data.template_file.puma-service.rendered}"
+    destination = "/tmp/puma.service"
+  }
+
+
 }
 
 
