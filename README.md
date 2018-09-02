@@ -168,3 +168,18 @@ ansible all -i ./inventory.py -m ping
    db_host: "{{ hostvars['reddit-db']['gce_private_ip'] }}"
 ```
 Таким образом ручное добавление ip адресов исключено полностью
+
+
+## Homework-10
+Создал раздельные роли для app и db.
+Описал окружения prod и stage.
+Настроил использование коммьюнити роли jdauphant.nginx на app.
+Познакомился с работой Ansible Vault
+
+#### Задание со \*
+
+Донастроил в качестве dynamic inventory gce.py.
+В том числе указал переменные в group_vars через переменные динамического инвентори.
+Настройки подключения к GCP находятся в gce.ini.
+
+Указал использовать его в ansible.cfg.

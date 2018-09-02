@@ -6,3 +6,5 @@ variables-immutable.json
 *.tfvars
 .terraform/
 gce.ini
+jdauphant.nginx
+vault.key

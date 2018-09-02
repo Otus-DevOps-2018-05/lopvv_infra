@@ -1,0 +1,4 @@
+---
+# defaults file for app
+db_host: "{{ hostvars['reddit-db']['gce_private_ip'] }}"
+env: local
